@@ -32,6 +32,7 @@ github_username: samajain
 # Build settings
 plugins:
   - jekyll-feed
+  - jekyll-include-cache
 
 remote_theme: mmistakes/minimal-mistakes
 

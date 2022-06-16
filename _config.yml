@@ -30,7 +30,7 @@ twitter_username: jekyllrb
 github_username: samajain
 
 # Build settings
-remote_theme: wowthemesnet/mediumish-theme-jekyll
+remote_theme: mmistakes/minimal-mistakes
 plugins:
   - jekyll-feed
 

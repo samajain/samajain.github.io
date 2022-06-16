@@ -34,7 +34,7 @@ plugins:
   - jekyll-feed
   - jekyll-include-cache
 
-remote_theme: mmistakes/minimal-mistakes
+theme: minimal-mistakes-jekyll
 
 # Exclude from processing.
 # The following items will not be processed, by default.

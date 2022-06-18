@@ -13,15 +13,13 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: MM
-email:
+title: The Backend Engineer's Guide to Distributed Computing
+email: samarth29@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-twitter_username: username
-github_username: username
-minimal_mistakes_skin: default
+  The go to blog for everything related to Distributed Computing
+  and Backend Engineering. We explore how software works and keeps up with the demand at scale!
+github_username: samajain
+minimal_mistakes_skin: dark
 search: true
 
 # Build settings
@@ -58,34 +56,32 @@ plugins:
   - jekyll-include-cache
 
 author:
-  name   : "First Lastname"
-  avatar : "/assets/images/bio-photo.jpg"
-  bio    : "My awesome biography constrained to a sentence or two goes here."
+  name   : "Samarth Jain"
+  avatar : "/assets/images/bio_photo.jpg"
+  bio    : "Software Engineer with 5+ years of Experience in Backend Engineering and Distributed Computing.
+            I love to code and solve problems! C++ | Python | Bash | Go | Hadoop | Spark"
   links:
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      url: "https://"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/"
+    - label: "Linkedin"
+      icon: "fa-linkedin"
+      url: "https://www.linkedin.com/in/samarthjain29"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
+      url: "https://github.com/samajain"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/"
+      url: "https://instagram.com/indiantedybear"
 
 footer:
   links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/"
+    - label: "Linkedin"
+      icon: "fa-linkedin"
+      url: "https://www.linkedin.com/in/samarthjain29"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
+      url: "https://github.com/samajain"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/"
+      url: "https://instagram.com/indiantedybear"
 
 defaults:
   # _posts

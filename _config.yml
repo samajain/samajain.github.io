@@ -58,7 +58,7 @@ plugins:
 author:
   name   : "Samarth Jain"
   avatar : "/assets/images/bio_photo.jpg"
-  bio    : "Software Engineer with 5+ years of Experience in Backend Engineering and Distributed Computing."
+  bio    : "Software Engineer with 5+ years of Experience in Backend Engineering and Distributed Computing. C++ &#124; Python &#124; Bash &#124; Hadoop &#124; Spark &#124; Scala &#124; Go"
   links:
     - label: "Linkedin"
       icon: "fab fa-fw fa-linkedin"

@@ -13,15 +13,16 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
+
 title: The Backend Engineer's Guide to Distributed Computing
 email: samarth29@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   The go to blog for everything related to Distributed Computing
   and Backend Engineering. We explore how software works and keeps up with the demand at scale!
 github_username: samajain
-minimal_mistakes_skin: neon
+minimal_mistakes_skin: contrast
 search: true
-
+repository: samajain/samajain.github.io
 # Build settings
 markdown: kramdown
 remote_theme: "mmistakes/minimal-mistakes@4.24.0"
@@ -109,8 +110,3 @@ category_archive:
 tag_archive:
   type: liquid
   path: /tags/
-
-header:
-  image: /assets/images/header_banner_2.jpg
-  caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
-

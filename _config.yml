@@ -20,7 +20,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   The go to blog for everything related to Distributed Computing
   and Backend Engineering. We explore how software works and keeps up with the demand at scale!
 github_username: samajain
-minimal_mistakes_skin: contrast
+minimal_mistakes_skin: neon 
 search: true
 repository: samajain/samajain.github.io
 # Build settings

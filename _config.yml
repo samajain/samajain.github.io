@@ -22,6 +22,8 @@ description: >- # this means to ignore newlines until "baseurl:"
 github_username: samajain
 minimal_mistakes_skin: neon 
 search: true
+lunr:
+  search_within_pages: true
 repository: samajain/samajain.github.io
 # Build settings
 markdown: kramdown

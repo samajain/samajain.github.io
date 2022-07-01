@@ -5,5 +5,4 @@
 layout: home
 header:
     image: /assets/images/distributed_engineering.gif
-    caption: "Photo credit: https://www.danheld.com"
 ---

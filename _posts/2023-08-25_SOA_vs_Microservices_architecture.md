@@ -1,6 +1,6 @@
 ---
 title: "SOA vs Microservices"
-date: 2022-07-01T18:00:30-04:00
+date: 2023-08-25T14:34:30-04:00
 categories:
   - blog
 tags:

@@ -8,6 +8,7 @@ tags:
   - Microservices
   - Architecture 
 ---
+![Possibility of Achieving Distributed Consensus](/assets/images/soa_vs_microservices.png){:class="img-responsive"}
 
 Rome wasn't built in a day and so won't a distributed system be. Just like with any complex entity, a good architecture before the actual implementation paves the path for the creation of highly performant and reliable distributed system. In this post, we will discuss the two most widely used architectures and the differences between them.
 
@@ -45,7 +46,7 @@ Microservices Architecture is an approach where a large application is broken do
 
 In summary, the key differences between Service-Oriented Architecture and Microservices Architecture lie in their service granularity, communication methods, governance structure, technology diversity, complexity, and scalability. SOA places a stronger emphasis on centralized governance and coarser-grained services, while Microservices Architecture promotes decentralized decision-making and finer-grained, autonomous services. The choice between these two architectures depends on factors such as the size and complexity of the application, the development team's preferences, and the need for scalability and agility. Both approaches have their merits and trade-offs, and the right choice should align with the specific goals of the project and the organization's requirements.
 
-![Possibility of Achieving Distributed Consensus](/assets/images/soa_vs_microservices.png){:class="img-responsive"}
+
 
 [comment]: #
 [comment]: #Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].

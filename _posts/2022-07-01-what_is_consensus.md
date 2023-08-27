@@ -43,7 +43,7 @@ When it comes to consensus algorithm, the possibility of solving consensus in a 
 
 ![Possibility of Achieving Distributed Consensus](/assets/images/possibility.png){:class="img-responsive"}
 
-So in this post, we discussed what a Consensus is, what a consensus algorithm needs to adhere to and the factors involved in solving a consensus problem in a distributed system. In our next post, we will dive deeper into consensus algorithms and discuss about one of my favorite distributed systems protocol: **[RAFT]()**.
+So in this post, we discussed what a Consensus is, what a consensus algorithm needs to adhere to and the factors involved in solving a consensus problem in a distributed system. In our next post, we will dive deeper into consensus algorithms and discuss about one of my favorite distributed systems protocol: **[RAFT](https://www.samarthjain.dev/blog/RAFT_protocol/)**.
 
 [comment]: #
 [comment]: #Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].

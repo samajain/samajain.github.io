@@ -27,7 +27,7 @@ Key Concepts of the Raft Protocol:
 * Safety and Progress Guarantees:
   Raft ensures safety by requiring that only a node with the most up-to-date log can become the Leader. This prevents older logs from overwriting newer ones. Additionally, Raft enforces a strict quorum-based approach, ensuring that only the nodes that have replicated a log entry can consider it committed. These safety guarantees help prevent anomalies and inconsistencies.
 
-##Advantages of the Raft Protocol:##
+Advantages of the Raft Protocol:
 
 * Simplicity and Understandability:
   One of Raft's primary strengths is its simplicity in comparison to other consensus algorithms like Paxos. The protocol's clear separation into leader election and log replication phases makes it easier to comprehend and implement. This simplicity aids in reducing the chances of subtle bugs and enhances maintainability.
@@ -51,7 +51,7 @@ Limitations and Considerations:
 
 In conclusion, the Raft protocol stands as a significant contribution to the field of distributed systems. Its simplicity and clarity have made it a favored choice for various applications that require consensus, such as distributed databases, key-value stores, and cloud-based services. The protocol's design principles, emphasizing understandable mechanics and strong safety guarantees, showcase its role in building reliable and scalable distributed systems while facilitating easier maintenance and troubleshooting. As the demand for robust consensus mechanisms continues to grow, Raft remains a foundational tool for engineers striving to achieve effective distributed system design.
 
-Head on to [the secret lives of data to see RAFT working in real time!](http://thesecretlivesofdata.com/raft/)
+Head on to [the secret lives of data](http://thesecretlivesofdata.com/raft/) to see the RAFT protocol working in real time!
 
 [comment]: #
 [comment]: #Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].

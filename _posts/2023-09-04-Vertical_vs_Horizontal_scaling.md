@@ -1,6 +1,6 @@
 ---
 title: "Vertical Scaling vs Horizontal Scaling"
-date: 2023-09-05T16:02:30-04:00
+date: 2023-09-04T16:02:30-04:00
 categories:
   - blog
 tags:

@@ -1,13 +1,12 @@
 ---
 title: "Vertical Scaling vs Horizontal Scaling"
-date: 2023-08-26T21:02:30-04:00
+date: 2023-09-05T16:02:30-04:00
 categories:
   - blog
 tags:
-  - RAFT
-  - Consensus Algorithm 
+  - Scalability 
 ---
-![Vertical Scaling vs Horizontal Scaling(Image courtesy Wikipedia)[https://en.wikipedia.org/wiki/Wikipedia:Wikimedia_Strategy_2018%E2%80%9320/Plan_Infrastructure_Scalability]](/assets/images/scaling.png){:class="img-responsive"}
+![Vertical Scaling vs Horizontal Scaling (Image courtesy Wikipedia)[https://en.wikipedia.org/wiki/Wikipedia:Wikimedia_Strategy_2018%E2%80%9320/Plan_Infrastructure_Scalability]](/assets/images/scaling.png){:class="img-responsive"}
 
 # Choosing the Right Path for Scalability: Horizontal vs Vertical Scaling
 

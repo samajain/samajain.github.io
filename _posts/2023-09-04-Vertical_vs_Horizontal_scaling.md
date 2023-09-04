@@ -4,7 +4,7 @@ date: 2023-09-05T16:02:30-04:00
 categories:
   - blog
 tags:
-  - Scalability 
+  - Scalability
 ---
 ![Vertical Scaling vs Horizontal Scaling (Image courtesy Wikipedia)[https://en.wikipedia.org/wiki/Wikipedia:Wikimedia_Strategy_2018%E2%80%9320/Plan_Infrastructure_Scalability]](/assets/images/scaling.png){:class="img-responsive"}
 

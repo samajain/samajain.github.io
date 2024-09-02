@@ -62,7 +62,7 @@ If high availability is a critical requirement, horizontal scaling provides inhe
 
 In practice, many modern applications use a combination of vertical and horizontal scaling. Initial resource-intensive components may be vertically scaled, while the overall system is horizontally scaled to handle increased traffic or demand.
 
-Ultimately, there is no one-size-fits-all answer to whether vertical or horizontal scaling is the best approach. The decision should be based on a careful evaluation of the application's requirements, budget constraints, and scalability goals, with the flexibility to adapt as those requirements evolve over time.
+There is no one-size-fits-all answer to whether vertical or horizontal scaling is the best approach. The decision should be based on a careful evaluation of the application's requirements, budget constraints, and scalability goals, with the flexibility to adapt as those requirements evolve over time.
 
 [comment]: #
 [comment]: #Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].

@@ -2,61 +2,24 @@
 layout: default
 ---
 
-{%- if page.header.overlay_image or page.header.overlay_color -%}
-{%- assign overlay_image = page.header.overlay_image -%}
-{%- assign overlay_color = page.header.overlay_color -%}
-{%- assign overlay_filter = page.header.overlay_filter | default: '0.5' -%}
-{%- assign opacity = page.header.opacity | default: '1.0' -%}
-{%- if overlay_image -%}
-{%- assign overlay_image = overlay_image | relative_url -%}
-{%- endif -%}
-<header class="page__hero">
-  <div class="wrapper">
-    {% if overlay_color %}
-    <div style="background-color: {{ overlay_color }}; opacity: {{ opacity }};"></div>
-    {% elsif overlay_image %}
-    <div style="background-image: url('{{ overlay_image }}'); opacity: {{ opacity }};"></div>
-    {% endif %}
-    {% if page.title %}
-    <div class="page__hero__caption">
-      <h1 class="page__hero__title">{{ page.title | escape }}</h1>
-      {% if page.subtitle %}
-      <h2 class="page__hero__subtitle">{{ page.subtitle | escape }}</h2>
-      {% endif %}
-    </div>
-    {% endif %}
-  </div>
-</header>
-{%- endif -%}
-
 <div id="main" role="main">
   <div class="archive">
     <h1 class="page__title">{{ site.title | default: site.name | default: "My Site" }}</h1>
     <p class="page__description">{{ site.description }}</p>
 
     {%- if site.posts.size > 0 -%}
-    <div class="page__posts">
-      {%- for post in site.posts limit: site.paginate -%}
-      <article class="archive__item">
-        <h2 class="archive__item-title">
+    <div class="post-list">
+      {%- for post in site.posts -%}
+      <article class="post-item">
+        <h2 class="post-item-title">
           <span class="post-date">{{ post.date | date: "%B %d, %Y" }}</span>
           <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
         </h2>
-        <p class="archive__item-excerpt">{{ post.excerpt | markdownify | strip | truncate: 160 }}</p>
-        <a href="{{ post.url | relative_url }}" class="btn btn--primary">Read More</a>
+        <span class="post-excerpt">{{ post.excerpt | strip_html | truncate: 200 }}</span>
+        <a href="{{ post.url | relative_url }}" class="post-read-more">Read more →</a>
       </article>
       {%- endfor -%}
     </div>
-    {%- if paginator.total_pages > 1 -%}
-    <div class="pagination">
-      {%- if paginator.previous_page -%}
-      <a href="{{ paginator.previous_page_path | relative_url }}" class="btn btn--primary btn--small">Previous</a>
-      {%- endif -%}
-      {%- if paginator.next_page -%}
-      <a href="{{ paginator.next_page_path | relative_url }}" class="btn btn--primary btn--small">Next</a>
-      {%- endif -%}
-    </div>
-    {%- endif -%}
     {%- endif -%}
   </div>
 </div>

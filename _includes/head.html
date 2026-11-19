@@ -21,3 +21,13 @@
 {%- endif -%}
 
 <script src="/assets/js/cursor-network.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/d2-lang@latest/dist/d2.min.js" defer></script>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('.d2').forEach(async (el) => {
+    const d2 = await window.d2.default
+    const svg = await d2.render(el.textContent)
+    el.innerHTML = svg
+  })
+})
+</script>

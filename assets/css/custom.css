@@ -26,7 +26,43 @@ body {
   display: none !important;
 }
 
-/* Post date styling on landing page */
+/* Post list layout on landing page */
+.archive {
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 0;
+  text-align: left;
+}
+
+.post-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.post-item {
+  padding: 1.5rem 0;
+  border-bottom: 1px solid #233042;
+}
+
+.post-item:last-child {
+  border-bottom: none;
+}
+
+.post-item-title {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.25rem;
+}
+
+.post-item-title a {
+  color: #e8eef5;
+  text-decoration: none;
+}
+
+.post-item-title a:hover {
+  color: #c20f53;
+}
+
 .post-date {
   display: block;
   font-size: 0.85rem;
@@ -34,3 +70,109 @@ body {
   font-family: var(--ds-mono);
   margin-bottom: 0.25rem;
 }
+
+.post-excerpt {
+  color: #8fa3b8;
+  font-size: 0.95rem;
+  margin: 0.75rem 0;
+  line-height: 1.5;
+}
+
+.post-read-more {
+  display: inline-block;
+  color: #f21368;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-top: 0.5rem;
+}
+
+.post-read-more:hover {
+  color: #c20f53;
+  text-decoration: underline;
+}
+
+.page__title {
+  margin-top: 0;
+  margin-bottom: 0.5rem !important;
+}
+
+.page__description {
+  margin: 0 0 2rem 0 !important;
+}
+
+/* Dark code blocks */
+.highlight,
+pre.highlight {
+  background: #0e1420 !important;
+  color: #e8eef5;
+  border: 1px solid #233042;
+  border-radius: 6px;
+}
+
+.highlight pre,
+pre.highlight code,
+.highlight code {
+  background: transparent !important;
+  color: #e8eef5;
+}
+
+code {
+  background: #161d2a;
+  color: #f21368;
+  padding: 0.15em 0.3em;
+  border-radius: 4px;
+  font-family: var(--ds-mono);
+  font-size: 0.9em;
+}
+
+/* Rouge syntax highlighting token colors for dark theme */
+.highlight .k { color: #ff7b72; }
+.highlight .kt { color: #d2a8ff; }
+.highlight .kc { color: #d2a8ff; }
+.highlight .kd { color: #ff7b72; }
+.highlight .kn { color: #ff7b72; }
+.highlight .kp { color: #ff7b72; }
+.highlight .kr { color: #ff7b72; }
+.highlight .ks { color: #ff7b72; }
+
+.highlight .s { color: #a5d6ff; }
+.highlight .se { color: #a5d6ff; }
+.highlight .si { color: #a5d6ff; }
+.highlight .ss { color: #a5d6ff; }
+
+.highlight .n { color: #e8eef5; }
+.highlight .nn { color: #e8eef5; }
+.highlight .nc { color: #d2a8ff; }
+.highlight .no { color: #d2a8ff; }
+.highlight .nd { color: #ff7b72; }
+.highlight .ni { color: #e8eef5; }
+.highlight .ne { color: #ff7b72; }
+.highlight .nf { color: #d2a8ff; }
+.highlight .fm { color: #d2a8ff; }
+.highlight .nl { color: #e8eef5; }
+.highlight .py { color: #e8eef5; }
+
+.highlight .m { color: #79c0ff; }
+.highlight .mb { color: #79c0ff; }
+.highlight .mf { color: #79c0ff; }
+.highlight .mh { color: #79c0ff; }
+.highlight .mi { color: #79c0ff; }
+.highlight .mo { color: #79c0ff; }
+
+.highlight .o { color: #d2a8ff; }
+.highlight .ow { color: #d2a8ff; }
+
+.highlight .c { color: #8b949e; }
+.highlight .ch { color: #8b949e; }
+.highlight .cm { color: #8b949e; }
+.highlight .cp { color: #8b949e; }
+.highlight .cpf { color: #8b949e; }
+.highlight .c1 { color: #8b949e; }
+.highlight .cs { color: #8b949e; }
+
+.highlight .p { color: #e8eef5; }
+.highlight .gd { color: #ff7b72; }
+.highlight .gi { color: #3fb950; }
+.highlight .ge { color: #e8eef5; }
+.highlight .gs { color: #e8eef5; }

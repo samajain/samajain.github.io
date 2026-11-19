@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="550" viewBox="0 0 900 550">
+  <defs>
+    <style>
+      .node { fill: #0b1016; stroke: #22d3ee; stroke-width: 2; rx: 6; }
+      .diamond { fill: #0b1016; stroke: #22d3ee; stroke-width: 2; }
+      .node-text { fill: #e8eef5; font-family: monospace; font-size: 14px; text-anchor: middle; }
+      .arrow { stroke: #22d3ee; stroke-width: 2; fill: none; marker-end: url(#arrowhead); }
+      .arrow-dashed { stroke: #22d3ee; stroke-width: 2; fill: none; stroke-dasharray: 4,4; marker-end: url(#arrowhead); }
+      .arrow-label { fill: #fbbf24; font-family: monospace; font-size: 12px; text-anchor: middle; }
+      .title { fill: #e8eef5; font-family: monospace; font-size: 18px; font-weight: bold; text-anchor: middle; }
+      .group-label { fill: #8fa3b8; font-family: monospace; font-size: 14px; font-weight: bold; text-anchor: middle; }
+      .group-bg { fill: #121823; stroke: #333; stroke-width: 1; rx: 8; }
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#22d3ee" />
+    </marker>
+  </defs>
+
+  <text x="450" y="40" class="title">Two Phase Commit Protocol</text>
+
+  <!-- Coordinator Group -->
+  <rect x="40" y="80" width="320" height="380" class="group-bg" />
+  <text x="200" y="110" class="group-label">COORDINATOR</text>
+
+  <rect x="70" y="140" width="260" height="50" class="node" />
+  <text x="200" y="168" class="node-text">Send PREPARE</text>
+
+  <rect x="70" y="210" width="260" height="50" class="diamond" />
+  <text x="200" y="238" class="node-text">All YES?</text>
+
+  <rect x="70" y="280" width="260" height="50" class="node" />
+  <text x="200" y="308" class="node-text">Send COMMIT</text>
+
+  <rect x="70" y="350" width="260" height="50" class="node" />
+  <text x="200" y="378" class="node-text">Send ABORT</text>
+
+  <rect x="70" y="420" width="260" height="50" class="node" />
+  <text x="200" y="448" class="node-text">Transaction Committed</text>
+
+  <rect x="70" y="490" width="260" height="50" class="node" />
+  <text x="200" y="518" class="node-text">Transaction Aborted</text>
+
+  <!-- Participants Group -->
+  <rect x="380" y="80" width="480" height="380" class="group-bg" />
+  <text x="620" y="110" class="group-label">PARTICIPANTS</text>
+
+  <rect x="410" y="140" width="420" height="50" class="node" />
+  <text x="620" y="168" class="node-text">Receive PREPARE</text>
+
+  <rect x="410" y="210" width="420" height="50" class="diamond" />
+  <text x="620" y="238" class="node-text">Execute & Vote</text>
+
+  <rect x="410" y="280" width="420" height="50" class="node" />
+  <text x="620" y="308" class="node-text">Wait for decision</text>
+
+  <rect x="410" y="350" width="420" height="50" class="node" />
+  <text x="620" y="378" class="node-text">Commit & Release Locks</text>
+
+  <rect x="410" y="420" width="420" height="50" class="node" />
+  <text x="620" y="448" class="node-text">Rollback & Release Locks</rect>
+
+  <!-- Arrows -->
+  <line x1="200" y1="190" x2="200" y2="210" class="arrow" />
+  <line x1="200" y1="260" x2="200" y2="280" class="arrow" />
+  <line x1="200" y1="330" x2="200" y2="350" class="arrow" />
+  <line x1="200" y1="400" x2="200" y2="420" class="arrow" />
+  <line x1="200" y1="470" x2="200" y2="490" class="arrow" />
+
+  <line x1="330" y1="210" x2="380" y2="190" class="arrow" />
+  <text x="340" y="190" class="arrow-label">Yes</text>
+
+  <line x1="330" y1="210" x2="380" y2="230" class="arrow" />
+  <text x="340" y="235" class="arrow-label">No</text>
+
+  <line x1="330" y1="238" x2="380" y2="210" class="arrow" />
+
+  <line x1="200" y1="380" x2="380" y2="360" class="arrow" />
+  <text x="220" y="370" class="arrow-label">COMMIT</text>
+
+  <line x1="200" y1="450" x2="380" y2="430" class="arrow" />
+  <text x="220" y="440" class="arrow-label">ABORT</text>
+
+  <line x1="330" y1="330" x2="380" y2="310" class="arrow" />
+  <text x="330" y="310" class="arrow-label">Receive COMMIT</text>
+
+  <line x1="330" y1="400" x2="380" y2="410" class="arrow" />
+  <text x="330" y="410" class="arrow-label">Receive ABORT</text>
+
+  <!-- Coordinator to Participants -->
+  <line x1="300" y1="168" x2="380" y2="168" class="arrow" />
+  <text x="325" y="162" class="arrow-label">PREPARE</text>
+
+  <line x1="330" y1="238" x2="380" y2="330" class="arrow-dashed" />
+  <text x="340" y="290" class="arrow-label">VOTE YES/NO</text>
+</svg>

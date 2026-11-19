@@ -1,3 +1,13 @@
+---
+title: "Concurrency in Go: Beyond Goroutines and Channels"
+date: 2024-02-05T10:00:00-04:00
+categories:
+  - blog
+tags:
+  - Concurrency
+  - Go
+---
+
 # Concurrency in Go: Beyond Goroutines and Channels
 
 *Go makes concurrency accessible. Building concurrent systems that remain predictable and efficient under production workloads requires a deeper understanding of the runtime and synchronization model.*

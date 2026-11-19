@@ -3,7 +3,7 @@ permalink: /about/
 title: "About"
 ---
 
-Hello, I'm Samarth Jain — a Staff Software Engineer & Tech Lead with 13+ years of experience designing, architecting, and building scalable, distributed backend systems.
+Hello, I'm Samarth Jain — a Staff Software Engineer & Tech Lead with 12+ years of experience designing, architecting, and building scalable, distributed backend systems.
 
 My engineering interests lie at the intersection of distributed systems, backend architecture, data-intensive applications, and large-scale system design. I enjoy tackling complex engineering challenges, understanding the underlying principles of distributed computing, and making informed architectural decisions that balance scalability, reliability, performance, and operational complexity.
 

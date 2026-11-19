@@ -62,7 +62,7 @@ plugins:
 author:
   name   : "Samarth Jain"
   avatar : "/assets/images/bio_photo.jpg"
-  bio    : "Staff Software Engineer | 12+ Years Building Distributed Systems & Scalable Backend Architecture"
+  bio    : "Staff Software Engineer &#124; 12+ Years Building Distributed Systems & Scalable Backend Architecture"
   links:
     - label: "Linkedin"
       icon: "fab fa-fw fa-linkedin"

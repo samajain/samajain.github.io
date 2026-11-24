@@ -95,7 +95,8 @@ This philosophy is summarized by:
 
 Channels provide a typed communication mechanism:
 
-```go
+
+{% highlight go %}
 func main() {
     jobs := make(chan int)
 
@@ -106,7 +107,7 @@ func main() {
     result := <-jobs
     fmt.Println(result)
 }
-```
+{% endhighlight %}
 
 An unbuffered channel synchronizes the sender and receiver. Buffered channels introduce a finite queue that allows producers and consumers to operate somewhat independently.
 
@@ -173,9 +174,9 @@ This is important because synchronization is not simply about preventing simulta
 
 For detecting data races, Go provides a built-in race detector:
 
-```bash
+{% highlight bash %}
 go test -race ./...
-```
+{% endhighlight %}
 
 This should be part of the testing strategy for applications that rely heavily on concurrency.
 
@@ -197,7 +198,7 @@ But unrestricted concurrency can overwhelm databases, external APIs, and other d
 
 A worker pool provides a more controlled approach. A fixed number of workers consume jobs from a bounded channel.
 
-```go
+{% highlight go %}
 jobs := make(chan Job, 100)
 
 for i := 0; i < 10; i++ {
@@ -207,7 +208,7 @@ for i := 0; i < 10; i++ {
         }
     }()
 }
-```
+{% endhighlight %}
 
 This limits concurrent execution to ten workers and buffers up to 100 pending jobs.
 

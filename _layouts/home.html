@@ -4,9 +4,6 @@ layout: default
 
 <div id="main" role="main">
   <div class="archive">
-    <h1 class="page__title">{{ site.title | default: site.name | default: "My Site" }}</h1>
-    <p class="page__description">{{ site.description }}</p>
-
     {%- if site.posts.size > 0 -%}
     <div class="post-list">
       {%- for post in site.posts -%}

@@ -8,8 +8,6 @@ tags:
   - Go
 ---
 
-# Understanding the Go Scheduler: G, M, P
-
 Launching a goroutine in Go is simple:
 
 ```go

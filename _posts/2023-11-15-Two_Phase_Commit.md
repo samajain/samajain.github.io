@@ -9,9 +9,10 @@ tags:
   - Consensus
   - Go
 ---
-![Two Phase Commit Protocol](/assets/images/2pc_pic.png){:class="img-responsive"}
 
 Two Phase Commit (2PC) is a distributed atomic commitment protocol used to coordinate transactions across multiple nodes. It ensures that all participants in a distributed transaction either commit or abort together — maintaining atomicity even when failures occur.
+
+![Two Phase Commit Protocol](/assets/images/2pc_pic.png){:class="img-responsive"}
 
 ## The Problem
 

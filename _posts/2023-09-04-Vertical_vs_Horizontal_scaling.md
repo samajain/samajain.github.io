@@ -6,11 +6,13 @@ categories:
 tags:
   - Scalability
 ---
-![Vertical Scaling vs Horizontal Scaling(Image courtesy Wikipedia)[https://en.wikipedia.org/wiki/Wikipedia:Wikimedia_Strategy_2018%E2%80%9320/Plan_Infrastructure_Scalability]](/assets/images/scaling.png){:class="img-responsive"}
 
 # Choosing the Right Path for Scalability: Horizontal vs Vertical Scaling
 
 In the world of distributed systems and cloud computing, scaling is a fundamental concept. It refers to the ability to handle an increasing workload by adding more resources to a system. Two primary approaches to scaling, vertical scaling and horizontal scaling, each have their unique advantages and use cases. Choosing the best approach depends on various factors, including the specific requirements of the application, the type of load and userbase, budget constraints, and scalability goals. Let's compare the two scaling approaches and see which fits your goals.
+
+![Vertical Scaling vs Horizontal Scaling(Image courtesy Wikipedia)[https://en.wikipedia.org/wiki/Wikipedia:Wikimedia_Strategy_2018%E2%80%9320/Plan_Infrastructure_Scalability]](/assets/images/scaling.png){:class="img-responsive"}
+
 
 ## Vertical Scaling (Scale-Up):
 

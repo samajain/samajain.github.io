@@ -1,6 +1,7 @@
 ---
 permalink: /about/
 title: "About"
+author_profile: true
 ---
 
 Hello, I'm Samarth Jain — a Staff Software Engineer & Tech Lead with 12+ years of experience designing, architecting, and building scalable, distributed backend systems.

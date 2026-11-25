@@ -7,11 +7,11 @@ tags:
   - RAFT
   - Consensus Algorithm 
 ---
-![RAFT Protocol (Image courtesy Hashicorp)](/assets/images/raft-protocol.jpg){:class="img-responsive"}
-
 The Raft Protocol: Enhancing Distributed Consensus
 
 In the realm of distributed systems, maintaining consensus among a group of nodes is essential for reliable and fault-tolerant operations. The Raft protocol, introduced by Diego Ongaro and John Ousterhout in 2013, is a consensus algorithm designed to provide a straightforward and understandable solution to the consensus problem. It aims to strike a balance between simplicity, understandability, and effectiveness in distributed systems.
+
+![RAFT Protocol (Image courtesy Hashicorp)](/assets/images/raft-protocol.jpg){:class="img-responsive"}
 
 Problem Statement:
 The consensus problem involves multiple nodes (servers) working together to agree on a single value or a sequence of values, even in the presence of failures. This is a critical requirement for tasks such as maintaining replicated state machines or managing distributed databases.

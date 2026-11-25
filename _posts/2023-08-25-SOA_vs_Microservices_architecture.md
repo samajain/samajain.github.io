@@ -8,9 +8,9 @@ tags:
   - Microservices
   - Architecture 
 ---
-![Possibility of Achieving Distributed Consensus](/assets/images/soa_vs_microservices.png){:class="img-responsive"}
-
 Rome wasn't built in a day and so won't a distributed system be. Just like with any complex entity, a good architecture before the actual implementation paves the path for the creation of highly performant and reliable distributed system. In this post, we will discuss the two most widely used architectures and the differences between them.
+
+![Possibility of Achieving Distributed Consensus](/assets/images/soa_vs_microservices.png){:class="img-responsive"}
 
 Service-Oriented Architecture (SOA) and Microservices Architecture are both architectural approaches that facilitate the development and deployment of complex software systems. They both aim to enhance modularity, scalability, and maintainability. However, they have distinct characteristics and principles that set them apart.
 

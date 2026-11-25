@@ -8,8 +8,6 @@ tags:
   - Go
 ---
 
-# Building High-Throughput Worker Pools in Go
-
 Goroutines make concurrency in Go remarkably accessible. Creating thousands of goroutines is relatively inexpensive, and the Go scheduler does a good job of managing their execution.
 
 But inexpensive doesn't mean unlimited.

@@ -1,0 +1,80 @@
+---
+---
+
+@charset "utf-8";
+
+$base00: #1b222c; /* code background */
+$base01: #2e3440;
+$base02: #3b4252;
+$base03: #616e88; /* comments */
+$base04: #d8dee9;
+$base05: #eceff4; /* make, test, default text */
+$base06: #e5e9f0;
+$base07: #8fbcbb;
+$base08: #bf616a;
+$base09: #d08770;
+$base0a: #ebcb8b; /* types */
+$base0b: #a3be8c; /* strings */
+$base0c: #88c0d0; /* operators */
+$base0d: #81a1c1; /* functions */
+$base0e: #b48ead; /* keywords */
+$base0f: #5e81ac;
+
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
+@import "minimal-mistakes";
+
+html {
+  font-size: 14px; // Default is 16px
+
+  @include breakpoint($medium) {
+    font-size: 16px; // Default is 18px
+  }
+
+  @include breakpoint($large) {
+    font-size: 17px; // Default is 20px
+  }
+
+  @include breakpoint($x-large) {
+    font-size: 18px; // Default is 22px
+  }
+}
+
+.layout--home .sidebar {
+  display: none;
+}
+
+#main > .archive:first-child,
+#main > .page:first-child {
+  float: none;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.greedy-nav .search__toggle {
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  color: #ffffff !important;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+/* Render a clean SVG magnifying glass if Font Awesome is missing */
+.greedy-nav .search__toggle i.fa-search {
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  background-color: currentColor;
+  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cpath d='M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z'/%3E%3C/svg%3E") no-repeat center / contain;
+  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cpath d='M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z'/%3E%3C/svg%3E") no-repeat center / contain;
+}
+
+.greedy-nav .search__toggle i.fa-search::before {
+  content: none !important;
+}
